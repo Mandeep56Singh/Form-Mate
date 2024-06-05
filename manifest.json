@@ -8,5 +8,16 @@
     "32": "images/google-forms.png",
     "48": "images/google-forms.png",
     "128": "images/google-forms.png"
+  },
+  "permissions": ["sidePanel"],
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "action": {
+    "default_title": "click to open side panel"
   }
 }
